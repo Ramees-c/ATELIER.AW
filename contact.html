@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ATELIER.AW</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white d-flex flex-column min-vh-100">
+
+    <nav class="navbar sticky-top bg-white border-bottom py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="fw-bold">ATELIER.</span><span class="text-gold">AW</span>
+            </a>
+            <button
+                class="navbar-toggler collapsed"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+            >
+                <span class="custom-icon-bar"></span>
+                <span class="custom-icon-bar"></span>
+                <span class="custom-icon-bar"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="height: 100vh;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title serif-font fw-bold" id="offcanvasNavbarLabel">ATELIER.<span class="text-gold">AW</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 text-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="text-center pb-4">
+                        <div class="d-flex justify-content-center gap-4">
+                            <a href="#" class="offcanvas-social-link"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="offcanvas-social-link"><i class="bi bi-whatsapp"></i></a>
+                            <a href="#" class="offcanvas-social-link"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container pt-3 pt-md-5 pb-2 pb-md-4">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-lg-9">
+                <h1 class="serif-font hero-title text-dark fw-bold ls-1 mb-2 mb-md-3">Let's Start a <span class="text-gold">Conversation</span></h1>
+                <p class="lead text-secondary mx-auto fw-light" style="max-width: 700px; font-size: clamp(1rem, 2vw, 1.125rem)">Whether you have a project in mind or just want to say hello, we'd love to hear from you.</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="container pb-5 mb-5">
+        <div class="row g-5 mt-2">
+            <!-- Contact Info & Map -->
+            <div class="col-lg-5 order-2 order-lg-1">
+                <div class="mb-5">
+                    <div class="mb-4">
+                        <p class="contact-label">Visit Us</p>
+                        <p class="contact-value">No. 42, Indiranagar 100ft Road,<br>Bangalore, Karnataka 560038</p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="contact-label">Contact</p>
+                        <p class="contact-value">
+                            <a href="mailto:hello@atelieraw.com" class="text-decoration-none text-dark">hello@atelieraw.com</a><br>
+                            <span class="fs-5 text-secondary">+91 80 4123 5678</span>
+                        </p>
+                    </div>
+                    <div class="mb-5">
+                        <p class="contact-label">Follow</p>
+                        <div class="d-flex">
+                            <a href="#" class="social-link-item">INSTAGRAM</a>
+                            <a href="#" class="social-link-item">LINKEDIN</a>
+                            <a href="#" class="social-link-item">FACEBOOK</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Embedded Map -->
+                <div class="rounded-3 overflow-hidden shadow-sm" style="height: 300px;">
+                    <iframe class="map-frame w-100 h-100 border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.001696423075!2d77.63860831482203!3d12.971742990855752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a77fdd8d95%3A0x727e285651b8108!2sIndiranagar%20100%20Feet%20Rd%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1629445624582!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-7 order-1 order-lg-2">
+                <div class="bg-light p-4 p-md-5 rounded-3 h-100">
+                    <form>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control form-control-underlined" id="name" placeholder="Your Name">
+                                    <label for="name">Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control form-control-underlined" id="email" placeholder="name@example.com">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control form-control-underlined" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control form-control-underlined" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <button type="submit" class="btn bg-gold text-white rounded-0 px-5 py-3 fw-bold ls-1 text-uppercase border-0 w-100 w-md-auto">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-3 py-md-4 border-top mt-auto" style="background-color: #191207">
+      <div class="container d-flex flex-column flex-md-row flex-wrap justify-content-center justify-content-md-between align-items-center gap-2 gap-md-3">
+        <small class="text-white-50 text-center text-md-start">© 2026 Atelier.AW | Site by AW Design</small>
+        <a href="mailto:info@atelieraw.com" class="text-gold text-decoration-none small">info@atelieraw.com</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

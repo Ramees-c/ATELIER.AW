@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | ATELIER.AW</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .nav-pills .nav-link {
+            color: var(--dark);
+            border-radius: 0;
+            padding: 10px 25px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            margin: 0 5px;
+            transition: all 0.3s ease;
+        }
+        .nav-pills .nav-link:hover {
+            background-color: var(--gold);
+            color: #fff !important;
+        }
+        .nav-pills .nav-link.active {
+            background-color: var(--gold);
+            color: #fff !important;
+        }
+        .gallery-item {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .gallery-item img {
+            cursor: pointer;
+        }
+        .pagination .page-link {
+            color: var(--dark);
+            border: none;
+            margin: 0 5px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .pagination .page-link:hover,
+        .pagination .page-link.active {
+            background-color: var(--gold);
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-white d-flex flex-column min-vh-100">
+
+    <nav class="navbar sticky-top bg-white border-bottom py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="fw-bold">ATELIER.</span><span class="text-gold">AW</span>
+            </a>
+            <button
+                class="navbar-toggler collapsed"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+            >
+                <span class="custom-icon-bar"></span>
+                <span class="custom-icon-bar"></span>
+                <span class="custom-icon-bar"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="height: 100vh;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title serif-font fw-bold" id="offcanvasNavbarLabel">ATELIER.<span class="text-gold">AW</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 text-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="text-center pb-4">
+                        <div class="d-flex justify-content-center gap-4">
+                            <a href="#" class="offcanvas-social-link"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="offcanvas-social-link"><i class="bi bi-whatsapp"></i></a>
+                            <a href="#" class="offcanvas-social-link"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container pt-3 pt-md-5 pb-2 pb-md-4">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-lg-9">
+                <h1 class="serif-font hero-title text-dark fw-bold ls-1 mb-2 mb-md-3">Selected Works</h1>
+                <p class="lead text-secondary mx-auto fw-light" style="max-width: 700px; font-size: clamp(1rem, 2vw, 1.125rem)">A curated collection of our architectural, interior, and conceptual planning projects.</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="container pb-5 mb-5">
+        <ul class="nav nav-pills justify-content-center mb-5" id="gallery-tabs">
+            <li class="nav-item"><button class="nav-link active" data-filter="all">All</button></li>
+            <li class="nav-item"><button class="nav-link" data-filter="interior">Interior</button></li>
+            <li class="nav-item"><button class="nav-link" data-filter="architect">Architecture</button></li>
+            <li class="nav-item"><button class="nav-link" data-filter="plans">Plans</button></li>
+        </ul>
+
+        <div class="row g-4" id="gallery-grid">
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="interior">
+                <div class="news-card h-100">
+                    <div class="news-img-wrap rounded-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800" class="w-100 object-fit-cover" alt="Interior">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="architect">
+                <div class="news-card h-100">
+                    <div class="news-img-wrap rounded-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=800" class="w-100 object-fit-cover" alt="Architecture">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="plans">
+                <div class="news-card h-100">
+                    <div class="news-img-wrap rounded-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800" class="w-100 object-fit-cover" alt="Plans">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="interior">
+                <div class="news-card h-100">
+                    <div class="news-img-wrap rounded-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?q=80&w=800" class="w-100 object-fit-cover" alt="Interior">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="architect">
+                <div class="news-card h-100">
+                    <div class="news-img-wrap rounded-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=800" class="w-100 object-fit-cover" alt="Architecture">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="plans">
+                <div class="news-card h-100">
+                    <div class="news-img-wrap rounded-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=800" class="w-100 object-fit-cover" alt="Plans">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation" class="mt-5 pt-4">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link bg-transparent" href="#" tabindex="-1" aria-disabled="true">&larr;</a>
+                </li>
+                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item">
+                    <a class="page-link bg-transparent" href="#">&rarr;</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <footer class="py-5 mt-auto" style="background-color: #191207;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <h4 class="serif-font text-white mb-3">ATELIER.<span class="text-gold">AW</span></h4>
+                    <small class="text-white-50">© 2026 Atelier.AW | Architecture & Interiors</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="mailto:info@atelieraw.com" class="text-gold text-decoration-none h5">info@atelieraw.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 text-center">
+                    <div class="d-inline-block position-relative">
+                        <button type="button" class="btn-close btn-close-white position-absolute" style="top: -30px; right: 0; z-index: 1055;" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <img src="" id="lightboxImage" class="img-fluid rounded shadow-lg" style="max-height: 90vh;" alt="Full Screen View">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('#gallery-tabs .nav-link');
+            const items = document.querySelectorAll('.gallery-item');
+            const lightboxModal = new bootstrap.Modal(document.getElementById('lightboxModal'));
+            const lightboxImage = document.getElementById('lightboxImage');
+
+            buttons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    buttons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const filter = btn.getAttribute('data-filter');
+                    items.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.classList.remove('d-none');
+                            item.style.animation = 'none';
+                            item.offsetHeight; 
+                            item.style.animation = 'fadeIn 0.5s ease-in-out';
+                        } else {
+                            item.classList.add('d-none');
+                        }
+                    });
+                });
+            });
+
+            // Lightbox functionality
+            document.querySelectorAll('.gallery-item img').forEach(img => {
+                img.addEventListener('click', function() {
+                    lightboxImage.src = this.src;
+                    lightboxModal.show();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

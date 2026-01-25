@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News | ATELIER.AW</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white">
+
+    <nav class="navbar sticky-top bg-white border-bottom py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="fw-bold">ATELIER.</span><span class="text-gold">AW</span>
+            </a>
+            <button
+                class="navbar-toggler collapsed"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+            >
+                <span class="custom-icon-bar"></span>
+                <span class="custom-icon-bar"></span>
+                <span class="custom-icon-bar"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="height: 100vh;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title serif-font fw-bold" id="offcanvasNavbarLabel">ATELIER.<span class="text-gold">AW</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 text-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="news.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="text-center pb-4">
+                        <div class="d-flex justify-content-center gap-4">
+                            <a href="#" class="offcanvas-social-link"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="offcanvas-social-link"><i class="bi bi-whatsapp"></i></a>
+                            <a href="#" class="offcanvas-social-link"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container pt-3 pt-md-5 pb-2 pb-md-4">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-lg-9">
+                <h1 class="serif-font hero-title text-dark fw-bold ls-1 mb-2 mb-md-3">Press & Publications</h1>
+                <p class="lead text-secondary mx-auto fw-light" style="max-width: 700px; font-size: clamp(1rem, 2vw, 1.125rem)">Latest updates, recognitions, and features from the world of ATELIER.AW.</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="container pb-5 mb-5">
+        <div class="row g-4 g-lg-5">
+            
+            <div class="col-md-6 col-lg-4">
+                <article class="news-card h-100">
+                    <div class="news-img-wrap rounded-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1635316992421-150c83535186?q=80&w=800" class="w-100 object-fit-cover" alt="Architectural Digest Feature">
+                    </div>
+                    <div class="news-body pt-4">
+                        <h3 class="news-title serif-font mb-3">Architectural Digest: The New Wave of Tropical Modernism</h3>
+                        <p class="news-desc text-secondary">Atelier.AW is featured in AD's cover story exploring how contemporary Indian practices are redefining sustainable luxury living.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <article class="news-card h-100">
+                    <div class="news-img-wrap rounded-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=800" class="w-100 object-fit-cover" alt="Award Winning Project">
+                    </div>
+                    <div class="news-body pt-4">
+                        <h3 class="news-title serif-font mb-3">Winner: 'Best Commercial Interior' at ID Honours 2026</h3>
+                        <p class="news-desc text-secondary">Our design for the 'Helix Workspace' in Bangalore has been recognized for its innovative use of natural light and communal spaces.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <article class="news-card h-100">
+                    <div class="news-img-wrap rounded-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?q=80&w=800" class="w-100 object-fit-cover" alt="Design Matters Podcast">
+                    </div>
+                    <div class="news-body pt-4">
+                        <h3 class="news-title serif-font mb-3">In Conversation: Principal Architect on 'Design Matters'</h3>
+                        <p class="news-desc text-secondary">Listen to our founder discuss the philosophy of "less but better" and the future of urban housing challenges.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <article class="news-card h-100">
+                    <div class="news-img-wrap rounded-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?q=80&w=800" class="w-100 object-fit-cover" alt="Elle Decor">
+                    </div>
+                    <div class="news-body pt-4">
+                        <h3 class="news-title serif-font mb-3">Elle Decor: Top 50 Architects in India 2025</h3>
+                        <p class="news-desc text-secondary">We are humbled to be included in Elle Decor's annual definitive list of the country's most influential design practices.</p>
+                    </div>
+                </article>
+            </div>
+
+             <div class="col-md-6 col-lg-4">
+                <article class="news-card h-100">
+                    <div class="news-img-wrap rounded-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1582037928769-181f2644ecb7?q=80&w=800" class="w-100 object-fit-cover" alt="Exhibition">
+                    </div>
+                    <div class="news-body pt-4">
+                        <h3 class="news-title serif-font mb-3">'Space & Form' Exhibition at The India Design ID</h3>
+                        <p class="news-desc text-secondary">Atelier.AW showcased a bespoke furniture collection exploring the relationship between brutalist forms and soft materials.</p>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <article class="news-card h-100">
+                    <div class="news-img-wrap rounded-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800" class="w-100 object-fit-cover" alt="New Studio Opening">
+                    </div>
+                    <div class="news-body pt-4">
+                        <h3 class="news-title serif-font mb-3">Announcing Our New Studio Space in Mumbai</h3>
+                        <p class="news-desc text-secondary">To better serve our growing client base across India, we are excited to open the doors to our new satellite office.</p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="py-5 mt-auto" style="background-color: #191207;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <h4 class="serif-font text-white mb-3">ATELIER.<span class="text-gold">AW</span></h4>
+                    <small class="text-white-50">© 2026 Atelier.AW | Architecture & Interiors</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="mailto:info@atelieraw.com" class="text-gold text-decoration-none h5">info@atelieraw.com</a>
+                     <div class="mt-3">
+                        <a href="#" class="text-white-50 text-decoration-none mx-2 small ls-1">INSTAGRAM</a>
+                        <a href="#" class="text-white-50 text-decoration-none mx-2 small ls-1">LINKEDIN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATELIER.AW | Architecture & Design</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:ital,wght@0,700;1,400&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .carousel-item {
+        height: 100vh;
+        min-height: 600px;
+        background-size: cover;
+        background-position: center;
+      }
+      .carousel-item .khosla-info-cards {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar fixed-top" id="mainNav" style="background-color: transparent;">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="fw-bold">ATELIER.</span><span class="text-gold">AW</span>
+        </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="custom-icon-bar"></span>
+          <span class="custom-icon-bar"></span>
+          <span class="custom-icon-bar"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="height: 100vh;">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title serif-font fw-bold" id="offcanvasNavbarLabel">ATELIER.<span class="text-gold">AW</span></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column">
+            <ul class="navbar-nav justify-content-center flex-grow-1 text-center">
+               <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+               <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+               <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="text-center pb-4">
+              <div class="d-flex justify-content-center gap-4">
+                <a href="#" class="offcanvas-social-link"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="offcanvas-social-link"><i class="bi bi-whatsapp"></i></a>
+                <a href="#" class="offcanvas-social-link"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      id="heroSlider"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div
+          class="carousel-item active"
+          style="background-image: url('./assets/AWAS.jpg.jpeg')"
+        >
+          <!-- <div class="hero-content">
+            <p class="cursive-font text-white mb-0">Welcome to</p>
+            <h1 class="hero-title text-white fw-bold ls-2">ATELIER.AW</h1>
+          </div> -->
+          <!-- <div class="khosla-info-cards d-md-none">
+            <div class="card-item">
+              <div class="inner-card">
+                <p>Atelier.AW wins 2026 Innovation Award</p>
+                <span class="arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+          style="background-image: url('./assets/AWAS.jpg.jpeg')"
+        >
+          <div class="hero-content">
+            <p class="cursive-font text-white mb-0">Sustainable</p>
+            <h1 class="hero-title text-white fw-bold ls-2">LIVING SPACES</h1>
+          </div>
+          <div class="khosla-info-cards d-md-none">
+            <div class="card-item">
+              <div class="inner-card">
+                <p>Exploring Tropical Modernism in Architecture</p>
+                <span class="arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+          style="background-image: url('./assets/AWAS.jpg.jpeg')"
+        >
+          <div class="hero-content">
+            <p class="cursive-font text-white mb-0">Modern</p>
+            <h1 class="hero-title text-white fw-bold ls-2">DESIGN PHILOSOPHY</h1>
+          </div>
+          <div class="khosla-info-cards d-md-none">
+            <div class="card-item">
+              <div class="inner-card">
+                <p>New Project: The Minimalist Pavilion</p>
+                <span class="arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+       <div
+          class="carousel-item active"
+          style="background-image: url('./assets/AWAS.jpg.jpeg')"
+        >
+          <!-- <div class="hero-content">
+            <p class="cursive-font text-white mb-0">Welcome to</p>
+            <h1 class="hero-title text-white fw-bold ls-2">ATELIER.AW</h1>
+          </div> -->
+          <!-- <div class="khosla-info-cards d-md-none">
+            <div class="card-item">
+              <div class="inner-card">
+                <p>Atelier.AW wins 2026 Innovation Award</p>
+                <span class="arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+          style="background-image: url('./assets/AWAS.jpg.jpeg')"
+        >
+          <div class="hero-content">
+            <p class="cursive-font text-white mb-0">Sustainable</p>
+            <h1 class="hero-title text-white fw-bold ls-2">LIVING SPACES</h1>
+          </div>
+          <div class="khosla-info-cards d-md-none">
+            <div class="card-item">
+              <div class="inner-card">
+                <p>Exploring Tropical Modernism in Architecture</p>
+                <span class="arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+          style="background-image: url('./assets/AWAS.jpg.jpeg')"
+        >
+          <div class="hero-content">
+            <p class="cursive-font text-white mb-0">Modern</p>
+            <h1 class="hero-title text-white fw-bold ls-2">DESIGN PHILOSOPHY</h1>
+          </div>
+          <div class="khosla-info-cards d-md-none">
+            <div class="card-item">
+              <div class="inner-card">
+                <p>New Project: The Minimalist Pavilion</p>
+                <span class="arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+         <div
+          class="carousel-item active"
+          style="background-image: url('./assets/AWAS.jpg.jpeg')"
+        >
+          <!-- <div class="hero-content">
+            <p class="cursive-font text-white mb-0">Welcome to</p>
+            <h1 class="hero-title text-white fw-bold ls-2">ATELIER.AW</h1>
+          </div> -->
+          <!-- <div class="khosla-info-cards d-md-none">
+            <div class="card-item">
+              <div class="inner-card">
+                <p>Atelier.AW wins 2026 Innovation Award</p>
+                <span class="arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+          style="background-image: url('./assets/AWAS.jpg.jpeg')"
+        >
+          <div class="hero-content">
+            <p class="cursive-font text-white mb-0">Sustainable</p>
+            <h1 class="hero-title text-white fw-bold ls-2">LIVING SPACES</h1>
+          </div>
+          <div class="khosla-info-cards d-md-none">
+            <div class="card-item">
+              <div class="inner-card">
+                <p>Exploring Tropical Modernism in Architecture</p>
+                <span class="arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+          style="background-image: url('./assets/AWAS.jpg.jpeg')"
+        >
+          <div class="hero-content">
+            <p class="cursive-font text-white mb-0">Modern</p>
+            <h1 class="hero-title text-white fw-bold ls-2">DESIGN PHILOSOPHY</h1>
+          </div>
+          <div class="khosla-info-cards d-md-none">
+            <div class="card-item">
+              <div class="inner-card">
+                <p>New Project: The Minimalist Pavilion</p>
+                <span class="arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- <div class="khosla-info-cards d-none d-md-block">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <div class="col-md-4 card-item border-end">
+              <div class="inner-card">
+                <p>Atelier.AW wins 2026 Innovation Award</p>
+                <span class="arrow">→</span>
+              </div>
+            </div>
+            <div class="col-md-4 card-item border-end d-none d-md-block">
+              <div class="inner-card">
+                <p>Exploring Tropical Modernism in Architecture</p>
+                <span class="arrow">→</span>
+              </div>
+            </div>
+            <div class="col-md-4 card-item d-none d-md-block">
+              <div class="inner-card">
+                <p>New Project: The Minimalist Pavilion</p>
+                <span class="arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Navbar scroll effect
+      window.onscroll = function () {
+        var nav = document.getElementById("mainNav");
+        if (window.pageYOffset > 50) {
+          nav.style.backgroundColor = "#ffffff";
+          nav.classList.add("shadow-sm");
+        } else {
+          nav.style.backgroundColor = "transparent";
+          nav.classList.remove("shadow-sm");
+        }
+      };
+    </script>
+  </body>
+</html>

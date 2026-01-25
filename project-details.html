@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of Courts | ATELIER.AW</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .detail-hero {
+            height: 70vh;
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .detail-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+        }
+        .project-meta-label {
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        .project-meta-value {
+            font-size: 0.95rem;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+        .content-text {
+            line-height: 1.8;
+            font-weight: 300;
+            color: #555;
+        }
+        .detail-image {
+            margin-bottom: 0;
+            transition: transform 0.3s ease;
+        }
+        .detail-image:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="bg-white d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="fw-bold ls-2">ATELIER.</span><span class="text-gold ls-2">AW</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase fw-semibold small ls-1">
+                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="detail-hero d-flex align-items-end mb-5" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200');">
+        <div class="container position-relative z-1 pb-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="text-white serif-font display-3 fw-bold mb-2">House of Courts</h1>
+                    <p class="text-white-50 lead ls-1">Residential / Bangalore</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        <div class="row gx-lg-5">
+            <!-- Sidebar / Project Info -->
+            <div class="col-lg-3 order-2 order-lg-1">
+                <div class="sticky-top pt-2" style="top: 100px; z-index: 1;">
+                    <div class="mb-4">
+                        <div class="project-meta-label">Location</div>
+                        <div class="project-meta-value">Bangalore, Karnataka</div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="project-meta-label">Area</div>
+                        <div class="project-meta-value">4,500 Sq. Ft.</div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="project-meta-label">Principal Architect</div>
+                        <div class="project-meta-value">Arjun Walia</div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="project-meta-label">Year</div>
+                        <div class="project-meta-value">2025</div>
+                    </div>
+                    <div class="mt-5 d-none d-lg-block">
+                        <a href="projects.html" class="btn btn-outline-dark rounded-0 text-uppercase small ls-1 px-4">Back to Projects</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-lg-9 order-1 order-lg-2 mb-5 mb-lg-0">
+                <div class="content-text mb-5">
+                    <p class="lead text-dark fw-normal mb-4 serif-font">The House of Courts is designed as a dialogue between the built form and the natural environment, creating a sanctuary within the urban density of Bangalore.</p>
+                    <p class="mb-3">Conceptually, the home is organized around a series of internal courtyards that act as the lungs of the house. These voids allow light and air to penetrate deep into the floor plate while maintaining privacy from the street. The material palette is restrained, featuring exposed concrete, natural timber, and Kota stone, which grounds the structure in its context.</p>
+                    <p>The transition between public and private spaces is modulated through levels and landscape buffers. The living areas open up completely to the central court, blurring the boundaries between inside and outside—a core tenet of our tropical modernist philosophy.</p>
+                </div>
+
+                <!-- Image Grid -->
+                <div class="row g-4">
+                    <div class="col-12"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200" class="w-100 rounded-1 detail-image" alt="Interior View"></div>
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800" class="w-100 h-100 object-fit-cover rounded-1 detail-image" alt="Detail View"></div>
+                    <div class="col-md-6"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800" class="w-100 h-100 object-fit-cover rounded-1 detail-image" alt="Courtyard"></div>
+                    <div class="col-12"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200" class="w-100 rounded-1 detail-image" alt="Facade Night"></div>
+                </div>
+
+                <!-- Video Section -->
+                <div class="mt-5 pt-4 border-top">
+                    <h4 class="serif-font mb-4">Project Walkthrough</h4>
+                    <div class="ratio ratio-16x9 rounded-1 overflow-hidden shadow-sm">
+                        <iframe src="https://www.youtube.com/embed/LXb3EKWsInQ?rel=0" title="Project Walkthrough" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- PDF Section -->
+                <div class="mt-5">
+                    <h4 class="serif-font mb-4">Plans & Documentation</h4>
+                    <div class="border rounded-1 bg-light" style="height: 600px;">
+                        <!-- Using a dummy PDF for demonstration. Replace src with your actual PDF file path -->
+                        <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" width="100%" height="100%" class="border-0 rounded-1"></iframe>
+                    </div>
+                    <div class="mt-2 text-end">
+                        <a href="#" class="small text-gold text-decoration-none fw-bold ls-1 text-uppercase">Download PDF &darr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-3 py-md-4 border-top mt-auto" style="background-color: #191207">
+      <div class="container d-flex flex-column flex-md-row flex-wrap justify-content-center justify-content-md-between align-items-center gap-2 gap-md-3">
+        <small class="text-white-50 text-center text-md-start">© 2026 Atelier.AW | Site by AW Design</small>
+        <a href="mailto:info@atelieraw.com" class="text-gold text-decoration-none small">info@atelieraw.com</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
