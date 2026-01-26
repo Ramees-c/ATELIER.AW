@@ -58,6 +58,20 @@
 </head>
 <body class="bg-white d-flex flex-column min-vh-100">
 
+    <!-- PAGE LOADER -->
+<div id="pageLoader">
+  <div class="loader-bg left"></div>
+  <div class="loader-bg right"></div>
+
+  <div class="loader-center text-center">
+    <img
+      src="./assets/loader.png"
+      alt="ATELIER.AW Loader"
+      class="loader-compass"
+    />
+  </div>
+</div>
+
     <nav class="navbar sticky-top bg-white border-bottom py-3" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -80,19 +94,20 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body d-flex flex-column">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 text-center">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <ul class="navbar-nav justify-content-center flex-grow-1 text-start">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door me-2"></i>Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="projects.html"><i class="bi bi-buildings me-2"></i>Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle me-2"></i>About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images me-2"></i>Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html"><i class="bi bi-newspaper me-2"></i>News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope me-2"></i>Contact</a></li>
                     </ul>
                     <div class="text-center pb-4">
                         <div class="d-flex justify-content-center gap-4">
                             <a href="#" class="offcanvas-social-link"><i class="bi bi-facebook"></i></a>
                             <a href="#" class="offcanvas-social-link"><i class="bi bi-whatsapp"></i></a>
                             <a href="#" class="offcanvas-social-link"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="offcanvas-social-link"><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -113,34 +128,28 @@
     </header>
 
     <main class="container mb-5">
-        <div class="row gx-lg-5">
-            <!-- Sidebar / Project Info -->
-            <div class="col-lg-3 order-2 order-lg-1">
-                <div class="sticky-top pt-2" style="top: 100px; z-index: 1;">
-                    <div class="mb-4">
+        <div class="row justify-content-center">
+            <!-- Main Content -->
+            <div class="col-lg-10 mb-5 mb-lg-0">
+                <div class="row border-bottom pb-4 mb-5 text-center">
+                    <div class="col-md-3 col-6">
                         <div class="project-meta-label">Location</div>
-                        <div class="project-meta-value">Bangalore, Karnataka</div>
+                        <div class="project-meta-value mb-0">Bangalore, Karnataka</div>
                     </div>
-                    <div class="mb-4">
+                    <div class="col-md-3 col-6">
                         <div class="project-meta-label">Area</div>
-                        <div class="project-meta-value">4,500 Sq. Ft.</div>
+                        <div class="project-meta-value mb-0">4,500 Sq. Ft.</div>
                     </div>
-                    <div class="mb-4">
+                    <div class="col-md-3 col-6 mt-3 mt-md-0">
                         <div class="project-meta-label">Principal Architect</div>
-                        <div class="project-meta-value">Arjun Walia</div>
+                        <div class="project-meta-value mb-0">Arjun Walia</div>
                     </div>
-                    <div class="mb-4">
+                    <div class="col-md-3 col-6 mt-3 mt-md-0">
                         <div class="project-meta-label">Year</div>
-                        <div class="project-meta-value">2025</div>
-                    </div>
-                    <div class="mt-5 d-none d-lg-block">
-                        <a href="projects.html" class="btn btn-outline-dark rounded-0 text-uppercase small ls-1 px-4">Back to Projects</a>
+                        <div class="project-meta-value mb-0">2025</div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Main Content -->
-            <div class="col-lg-9 order-1 order-lg-2 mb-5 mb-lg-0">
                 <div class="content-text mb-5">
                     <p class="lead text-dark fw-normal mb-4 serif-font">The House of Courts is designed as a dialogue between the built form and the natural environment, creating a sanctuary within the urban density of Bangalore.</p>
                     <p class="mb-3">Conceptually, the home is organized around a series of internal courtyards that act as the lungs of the house. These voids allow light and air to penetrate deep into the floor plate while maintaining privacy from the street. The material palette is restrained, featuring exposed concrete, natural timber, and Kota stone, which grounds the structure in its context.</p>
@@ -174,6 +183,10 @@
                         <a href="#" class="small text-gold text-decoration-none fw-bold ls-1 text-uppercase">Download PDF &darr;</a>
                     </div>
                 </div>
+
+                <div class="mt-5 text-center">
+                    <a href="projects.html" class="btn btn-outline-dark rounded-0 text-uppercase small ls-1 px-4">Back to Projects</a>
+                </div>
             </div>
         </div>
     </main>
@@ -186,5 +199,13 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("pageLoader");
+        setTimeout(() => {
+          loader.classList.add("hide");
+        }, 1000); // Start hiding after 1 second of initial display
+      });
+    </script>
 </body>
 </html>

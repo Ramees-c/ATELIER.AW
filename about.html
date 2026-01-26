@@ -15,7 +15,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body class="bg-white">
+    <!-- PAGE LOADER -->
+    <div id="pageLoader">
+      <div class="loader-bg left"></div>
+      <div class="loader-bg right"></div>
+
+      <div class="loader-center text-center">
+        <img
+          src="./assets/loader.png"
+          alt="ATELIER.AW Loader"
+          class="loader-compass"
+        />
+      </div>
+    </div>
     <nav class="navbar sticky-top bg-white border-bottom py-3" id="mainNav">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -38,19 +52,20 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body d-flex flex-column">
-                <ul class="navbar-nav justify-content-center flex-grow-1 text-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <ul class="navbar-nav justify-content-center flex-grow-1 text-start">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door me-2"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html"><i class="bi bi-buildings me-2"></i>Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html"><i class="bi bi-info-circle me-2"></i>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images me-2"></i>Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html"><i class="bi bi-newspaper me-2"></i>News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope me-2"></i>Contact</a></li>
                 </ul>
                 <div class="text-center pb-4">
                     <div class="d-flex justify-content-center gap-4">
                         <a href="#" class="offcanvas-social-link"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="offcanvas-social-link"><i class="bi bi-whatsapp"></i></a>
                         <a href="#" class="offcanvas-social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="offcanvas-social-link"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -384,5 +399,13 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("pageLoader");
+        setTimeout(() => {
+          loader.classList.add("hide");
+        }, 1000); // Start hiding after 1 second of initial display
+      });
+    </script>
   </body>
 </html>
