@@ -45,8 +45,15 @@ body {
 .bg-gold {
   background-color: var(--gold) !important;
 }
+.ls-1 {
+  letter-spacing: 1px;
+}
 .ls-2 {
   letter-spacing: 2px;
+}
+.bg-dark-theme {
+  background-color: var(--dark) !important;
+  color: var(--white);
 }
 
 /* ===============================
@@ -306,17 +313,13 @@ body {
 
 .principal-card img {
   width: 100%;
-  height: clamp(250px, 60vw, 450px);
-  object-fit: cover;
-  filter: grayscale(100%);
+  height: auto;
+  object-fit: contain;
   transition: 0.5s ease;
 }
 
-.principal-card:hover img {
-  filter: grayscale(0%);
-}
 .firm-img {
-  min-height: clamp(250px, 50vw, 400px);
+  height: auto;
 }
 
 .section-title {
@@ -431,12 +434,6 @@ body {
   }
 
   /* About Page Mobile Optimizations */
-  .principal-card img {
-    height: clamp(200px, 50vw, 320px);
-  }
-  .firm-img {
-    min-height: clamp(200px, 50vw, 250px);
-  }
   .section-title {
     font-size: clamp(1.4rem, 3.5vw, 1.75rem);
   }
@@ -588,11 +585,7 @@ body {
 }
 
 .map-frame {
-  filter: grayscale(100%);
   transition: filter 0.5s ease;
-}
-.map-frame:hover {
-  filter: grayscale(0%);
 }
 
 /* --- Offcanvas Navbar --- */
