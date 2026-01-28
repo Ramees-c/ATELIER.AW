@@ -14,25 +14,13 @@ body {
   margin: 0;
   background-color: var(--white);
   /* Firefox */
-  scrollbar-width: thin;
-  scrollbar-color: #d1d1d1 var(--white);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 /* --- Custom Scrollbar (WebKit) --- */
 ::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: var(--white);
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--gold);
-  border-radius: 10px;
-  border: 2px solid var(--white);
-}
-::-webkit-scrollbar-thumb:hover {
-  /* background-color: var(--gold); */
-  background-color: #d1d1d1;
+  display: none;
 }
 
 /* --- Global Utilities --- */
@@ -447,6 +435,9 @@ body {
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
   .cursive-font {
     font-size: clamp(2.2rem, 7vw, 2.7rem);
   }
