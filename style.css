@@ -149,9 +149,15 @@ body {
 
 /* --- Navbar Styling --- */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.65); /* more transparent */
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px); /* Safari support */
+
   padding: clamp(12px, 2vw, 20px) 0;
-  transition: 0.3s;
+  transition: 0.3s ease;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 .navbar-brand {
@@ -191,7 +197,7 @@ body {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: var(--dark);
+  background-color: var(--gold);
   position: absolute;
   left: 0;
   transition: all 0.3s ease-in-out;
@@ -233,7 +239,7 @@ body {
   background-size: cover;
   background-position: center;
 }
-/* .carousel-item::before {
+.carousel-item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -241,22 +247,51 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
-} */
+}
 
 .hero-content {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100%;
   z-index: 2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .cursive-font {
   font-family: "Great Vibes", cursive;
   font-size: 5rem;
   color: var(--dark);
+}
+
+/* --- Hero Button --- */
+.btn-hero {
+  display: inline-block;
+  padding: 14px 40px;
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-hero:hover {
+  background-color: var(--gold);
+  color: var(--dark);
+  border-color: var(--gold);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* --- Signature Info Cards (Bottom of Hero) --- */
@@ -418,6 +453,12 @@ body {
     font-size: 0.9rem;
     letter-spacing: 1.5px;
   }
+  .btn-hero {
+    padding: 12px 30px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-top: 25px;
+  }
 
   .about-container {
     padding-top: 20px;
@@ -469,6 +510,12 @@ body {
   .hero-content h4 {
     font-size: 0.7rem;
     letter-spacing: 1px;
+  }
+  .btn-hero {
+    padding: 10px 24px;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
   }
 
   .section-title {
