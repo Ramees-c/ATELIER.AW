@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | ATELIER.AW</title>
+   <title>ATELIER.AW | Architecture | Interior | Planning</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,7 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -30,10 +34,27 @@
         />
       </div>
     </div>
+
+    <!-- Whatsapp icon -->
+    <div>
+      <a
+        href="https://wa.me/919037649964"
+        class="whatsapp-float"
+        target="_blank"
+        aria-label="Chat on WhatsApp"
+      >
+        <svg viewBox="0 0 32 32" width="28" height="28">
+          <path
+            fill="white"
+            d="M16 .396C7.163.396 0 7.559 0 16.396c0 2.821.736 5.578 2.136 8.01L0 32l7.83-2.053a15.94 15.94 0 0 0 8.17 2.243c8.837 0 16-7.163 16-16S24.837.396 16 .396zm0 29.239a13.12 13.12 0 0 1-6.682-1.832l-.477-.284-4.647 1.218 1.241-4.532-.311-.467A13.07 13.07 0 0 1 2.93 16.396c0-7.208 5.862-13.07 13.07-13.07 7.208 0 13.07 5.862 13.07 13.07 0 7.208-5.862 13.07-13.07 13.07zm7.548-9.805c-.413-.207-2.444-1.204-2.823-1.341-.379-.138-.655-.207-.931.207s-1.069 1.341-1.31 1.617c-.241.276-.483.31-.896.103-.413-.207-1.744-.642-3.322-2.049-1.228-1.095-2.057-2.447-2.298-2.86-.241-.413-.026-.637.181-.844.187-.187.413-.483.62-.724.207-.241.276-.413.414-.689.138-.276.069-.517-.034-.724-.103-.207-.931-2.243-1.276-3.069-.335-.804-.676-.695-.931-.708l-.793-.014c-.276 0-.724.103-1.103.517-.379.413-1.448 1.414-1.448 3.448s1.483 4 1.69 4.276c.207.276 2.918 4.456 7.074 6.247.989.427 1.76.682 2.361.873.992.315 1.896.271 2.61.164.797-.119 2.444-.999 2.789-1.966.345-.966.345-1.793.241-1.966-.103-.172-.379-.276-.793-.483z"
+          />
+        </svg>
+      </a>
+    </div>
     <nav class="navbar sticky-top bg-white border-bottom py-3" id="mainNav">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <span class="fw-bold">ATELIER.</span><span class="text-gold">AW</span>
+          <img src="./assets/brand_logo.png" alt="ATELIER.AW" class="nav-logo">
         </a>
         <button
           class="navbar-toggler collapsed"
@@ -46,29 +67,64 @@
           <span class="custom-icon-bar"></span>
           <span class="custom-icon-bar"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="height: 100vh;">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title serif-font fw-bold" id="offcanvasNavbarLabel">ATELIER.<span class="text-gold">AW</span></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+          style="height: 100vh"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img src="./assets/brand_logo.png" alt="ATELIER.AW" class="nav-logo">
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column">
+            <ul
+              class="navbar-nav justify-content-center flex-grow-1 text-start"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="text-center pb-4">
+              <div class="d-flex justify-content-center gap-4">
+                <a href="#" class="offcanvas-social-link"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="https://wa.me/919037649964" target="_blank" rel="noopener noreferrer" class="offcanvas-social-link"
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
+                <a href="#" class="offcanvas-social-link"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#" class="offcanvas-social-link"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
             </div>
-            <div class="offcanvas-body d-flex flex-column">
-                <ul class="navbar-nav justify-content-center flex-grow-1 text-start">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door me-2"></i>Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html"><i class="bi bi-buildings me-2"></i>Projects</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html"><i class="bi bi-info-circle me-2"></i>About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images me-2"></i>Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html"><i class="bi bi-newspaper me-2"></i>News</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope me-2"></i>Contact</a></li>
-                </ul>
-                <div class="text-center pb-4">
-                    <div class="d-flex justify-content-center gap-4">
-                        <a href="#" class="offcanvas-social-link"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="offcanvas-social-link"><i class="bi bi-whatsapp"></i></a>
-                        <a href="#" class="offcanvas-social-link"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="offcanvas-social-link"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -90,64 +146,28 @@
       </div>
     </header>
 
-    <div
-      class="sub-nav sticky-top bg-white py-2 py-md-3 border-bottom sub-nav-sticky"
-    >
-      <div class="container">
-        <ul
-          class="nav justify-content-center justify-content-md-end text-uppercase small fw-bold gap-2 gap-md-4"
-        >
-          <li class="nav-item">
-            <a class="nav-link text-dark px-2 px-md-0" href="#firm">The Firm</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-gold px-2 px-md-0" href="#philosophy"
-              >Design Philosophy</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark px-2 px-md-0" href="#principals"
-              >Principals</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark px-2 px-md-0" href="#team">Team</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
     <main class="container">
       <section id="firm" class="mb-4 mb-md-5">
         <div class="row align-items-center mb-4 mb-md-5 g-3 g-md-4 g-lg-5">
           <div class="col-12 col-lg-6 order-lg-2 mb-3 mb-lg-0">
             <div class="rounded-3 overflow-hidden shadow-sm">
               <img
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+                src="./assets/about_architects.jpg"
                 class="w-100 firm-img"
-                alt="Studio Interior"
+                alt="Architects of Context & Community"
               />
             </div>
           </div>
           <div class="col-12 col-lg-6 order-lg-1">
-            <h2 class="section-title mb-3 mb-md-4">The Firm</h2>
+            <h2 class="section-title mb-3 mb-md-4">
+              Architects of Context & Community
+            </h2>
             <p class="body-text lead fs-6 mb-3">
-              Atelier.AW is a multi-disciplinary architecture and interior
-              design firm based in Bangalore, established in 2026. We create a
-              versatile body of work ranging from bespoke residences to
-              corporate offices and hospitality spaces.
-            </p>
-            <p class="body-text text-secondary mb-3">
-              Our distinct style of tropical residential architecture uses local
-              materials and concepts but reinterprets them with a unique and
-              contemporary design sensibility. We believe in designing spaces
-              that are not only visually stunning but also deeply connected to
-              their environment.
-            </p>
-            <p class="body-text text-secondary">
-              Driven by a passion for detail, our studio operates as an open
-              laboratory where ideas are exchanged freely, resulting in projects
-              that are culturally rooted yet globally relevant.
+              Established in 2013 in Kannur, Atelier aw is the realization of a
+              shared vision between university cohorts and Principal Architects,
+              Wakif MK and Abdul Kader. What began as an academic alliance has
+              evolved into a premier design studio dedicated to shaping spaces
+              that truly resonate with their environment.
             </p>
           </div>
         </div>
@@ -156,58 +176,126 @@
       <hr class="my-4 my-md-5 opacity-10 border-secondary" />
 
       <section id="philosophy" class="mb-4 mb-md-5">
-        <div class="row g-3 g-md-4 g-lg-5">
-          <div class="col-12 col-lg-4 mb-3 mb-lg-0">
-            <h2 class="section-title mb-3 mb-md-4">Design Philosophy</h2>
-            <p class="text-secondary">
-              Our approach is grounded in three core principles that guide every
-              line we draw and every material we choose.
+        <div class="row align-items-center mb-4 mb-md-5 g-3 g-md-4 g-lg-5">
+          <div class="col-12 col-lg-6 order-lg-1 mb-3 mb-lg-0">
+            <div class="rounded-3 overflow-hidden shadow-sm">
+              <img
+                src="./assets/about_design_philosophy.jpg"
+                class="w-100 firm-img"
+                alt="Our Design Philosophy"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 order-lg-2">
+            <h2 class="section-title mb-3 mb-md-4">Our Design Philosophy</h2>
+            <p class="body-text text-secondary">
+              We believe architecture is a dialogue between the past and the
+              future. Our practice is defined by a seamless fusion of Regional
+              sensibilities and Contemporary aesthetics. We are deeply committed
+              to rooted architecture—prioritizing locally sourced materials to
+              create structures that are not only visually striking but
+              ecologically responsible and climatically appropriate.
             </p>
           </div>
-          <div class="col-12 col-lg-8">
-            <div class="row g-3 g-md-4">
-              <div class="col-12 col-md-6">
-                <div class="p-3 p-md-4 bg-light rounded-3 h-100">
-                  <h4 class="serif-font mb-3">Contextualism</h4>
-                  <p class="body-text small text-secondary">
-                    We believe that architecture should be rooted in one’s
-                    environment. Our design is experiential, modulating space to
-                    create environments that respond to the site's unique
-                    climate and topography.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="p-4 bg-light rounded-3 h-100">
-                  <h4 class="serif-font mb-3">Holistic Design</h4>
-                  <p class="body-text small text-secondary">
-                    We blur the boundaries between architecture, interior
-                    design, landscape, and lighting. Every detail is crafted
-                    with purpose, ensuring a cohesive narrative throughout the
-                    built form.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="p-4 bg-light rounded-3 h-100">
-                  <h4 class="serif-font mb-3">Sustainability</h4>
-                  <p class="body-text small text-secondary">
-                    Sustainability is not an afterthought but a fundamental
-                    layer of our process. We prioritize local materials, passive
-                    cooling techniques, and energy-efficient systems.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="p-4 bg-light rounded-3 h-100">
-                  <h4 class="serif-font mb-3">Timelessness</h4>
-                  <p class="body-text small text-secondary">
-                    We strive for an aesthetic that transcends trends. By
-                    focusing on proportion, light, and honest materiality, we
-                    create spaces that age gracefully.
-                  </p>
-                </div>
-              </div>
+        </div>
+      </section>
+
+      <hr class="my-4 my-md-5 opacity-10 border-secondary" />
+
+      <section id="expertise" class="mb-4 mb-md-5">
+        <div class="row align-items-center mb-4 mb-md-5 g-3 g-md-4 g-lg-5">
+          <div class="col-12 col-lg-6 order-lg-2 mb-3 mb-lg-0">
+            <div class="rounded-3 overflow-hidden shadow-sm">
+              <img
+                src="./assets/about_spectrum_of_expertise.jpg"
+                class="w-100 firm-img"
+                alt="A Spectrum of Expertise"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 order-lg-1">
+            <h2 class="section-title mb-3 mb-md-4">A Spectrum of Expertise</h2>
+            <p class="body-text text-secondary mb-4">
+              Our portfolio is as diverse as the landscapes we build on. Over
+              the last decade, we have successfully delivered projects ranging
+              from:
+            </p>
+            <ul class="list-unstyled text-secondary">
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-gold me-2"></i>Bespoke
+                Residences & Villas
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-gold me-2"></i>Commercial
+                Complexes & Hospitality Projects
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-gold me-2"></i>Interior
+                Design & Spatial Planning
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-gold me-2"></i>Large-Scale
+                Public Infrastructure
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-gold me-2"></i>Government
+                Projects
+              </li>
+            </ul>
+            <p class="body-text text-secondary mt-4">
+              With a leadership background that includes rigorous experience
+              with various regulatory frameworks, we bring a high level of
+              professional compliance and technical precision to every
+              commission.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-4 my-md-5 opacity-10 border-secondary" />
+
+      <section id="engagement" class="mb-4 mb-md-5">
+        <div class="row align-items-center mb-4 mb-md-5 g-3 g-md-4 g-lg-5">
+          <div class="col-12 col-lg-6 order-lg-1 mb-3 mb-lg-0">
+            <div class="rounded-3 overflow-hidden shadow-sm">
+              <img
+                src="./assets/about_flexible_ engagement.jpg"
+                class="w-100 firm-img"
+                alt="Flexible Engagement: Design & Build"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 order-lg-2">
+            <h2 class="section-title mb-3 mb-md-4">
+              Flexible Engagement: Design & Build
+            </h2>
+            <p class="body-text text-secondary mb-4">
+              At Atelier aw, we adapt to the specific needs of our clients. We
+              offer two distinct modes of engagement:
+            </p>
+            <div class="mb-3">
+              <h4 class="serif-font h5">
+                a. Architectural & Interior Consultancy
+              </h4>
+              <p class="text-secondary">
+                For clients who require a visionary design blueprint and
+                technical drawings to guide their own construction teams.
+              </p>
+            </div>
+            <div class="mb-4">
+              <h4 class="serif-font h5">
+                b. Comprehensive Design-to-Key Handover
+              </h4>
+              <p class="text-secondary">
+                A stress-free, turnkey solution where we manage the entire
+                lifecycle—from the initial sketch and material selection to
+                construction and final delivery.
+              </p>
+            </div>
+            <p class="body-text text-secondary mt-4 fst-italic">
+              Whether creating a single room’s interior or a large-scale public
+              structure, we don't just design spaces; we deliver completed
+              dreams.
             </div>
           </div>
         </div>
@@ -226,22 +314,27 @@
                 <div class="principal-card">
                   <div class="overflow-hidden rounded-3 mb-3">
                     <img
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
+                      src="./assets/Abdu.jpeg"
                       class="w-100"
-                      alt="Arjun Walia"
+                      alt="Abdul Kader"
                     />
                   </div>
-                  <h3 class="principal-name serif-font h4 mb-1">Arjun Walia</h3>
+                  <h3 class="principal-name serif-font h4 mb-1">Abdul Kader</h3>
                   <p
                     class="principal-role text-gold text-uppercase small ls-1 fw-bold mb-3"
                   >
-                    Founder & Principal Architect
+                    Principal Architect
                   </p>
                   <p class="about-text small text-secondary">
-                    Arjun studied architecture at Pratt Institute, New York. He
-                    brings over 15 years of experience in sustainable
-                    architecture, driving the firm's ethos of blending nature
-                    with built forms.
+                    Abdul Kader, co-founder, is driven by a passion for
+                    sustainable design and material innovation, ensuring every
+                    project is ecologically responsible and built to last.
+                  </p>
+                  <p class="small text-secondary mb-0">
+                    <i class="bi bi-phone text-gold me-2"></i
+                    ><a href="tel:+919037437967" class="text-secondary text-decoration-none principal-phone"
+                      >+91 9037 43 79 67</a
+                    >
                   </p>
                 </div>
               </div>
@@ -249,24 +342,30 @@
                 <div class="principal-card">
                   <div class="overflow-hidden rounded-3 mb-3">
                     <img
-                      src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+                      src="./assets/Wakif.jpeg"
                       class="w-100"
-                      alt="Sarah Jenkins"
+                      alt="Wakif"
                     />
                   </div>
                   <h3 class="principal-name serif-font h4 mb-1">
-                    Sarah Jenkins
+                    Wakif
                   </h3>
                   <p
                     class="principal-role text-gold text-uppercase small ls-1 fw-bold mb-3"
                   >
-                    Design Director
+                    Principal Architect
                   </p>
                   <p class="about-text small text-secondary">
-                    With a background in fine arts and interior design, Sarah
-                    leads the studio's interior projects. Her eye for design
-                    detailing and expertise in materials has enabled
-                    interpreting the firm's vocabulary in new ways.
+                    Wakif, a co-founder of Atelier aw, brings a deep
+                    understanding of regional sensibilities and a commitment to
+                    creating architecture that is both contextual and
+                    contemporary.
+                  </p>
+                  <p class="small text-secondary mb-0">
+                    <i class="bi bi-phone text-gold me-2"></i
+                    ><a href="tel:+919037649964" class="text-secondary text-decoration-none principal-phone"
+                      >+91 9037 64 99 64</a
+                    >
                   </p>
                 </div>
               </div>
@@ -275,12 +374,12 @@
         </div>
       </section>
 
-      <hr class="my-4 my-md-5 opacity-10 border-secondary" />
+      <!-- <hr class="my-4 my-md-5 opacity-10 border-secondary" />
 
       <section id="team" class="mb-4 mb-md-5">
         <div class="row g-3 g-md-4 g-lg-5">
           <div class="col-12 col-lg-3 mb-3 mb-lg-0">
-            <h2 class="section-title mb-3">Team</h2>
+            <h2 class="section-title mb-3">Our Team</h2>
             <p class="text-secondary small">
               Our diverse team of architects, designers, and thinkers.
             </p>
@@ -350,60 +449,91 @@
               <div class="col-6 col-md-4">
                 <div class="team-card p-3 border rounded-3 text-center h-100">
                   <h5 class="serif-font mb-1 h6">Priya Kapoor</h5>
-                  <small
-                    class="text-gold text-uppercase ls-1"
-                    style="font-size: 0.65rem"
-                    >Architect</small
-                  >
+                  <small class="text-gold text-uppercase ls-1" style="font-size: 0.65rem">Architect</small>
                 </div>
               </div>
               <div class="col-6 col-md-4">
                 <div class="team-card p-3 border rounded-3 text-center h-100">
                   <h5 class="serif-font mb-1 h6">Rohan Das</h5>
-                  <small
-                    class="text-gold text-uppercase ls-1"
-                    style="font-size: 0.65rem"
-                    >Intern</small
-                  >
+                  <small class="text-gold text-uppercase ls-1" style="font-size: 0.65rem">Intern</small>
                 </div>
               </div>
             </div>
             <div class="mt-5">
               <div class="rounded-3 overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
-                  class="img-fluid w-100 grayscale-img"
-                  alt="The Atelier Team"
-                />
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" class="img-fluid w-100" alt="The Atelier Team" />
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="py-5 bg-dark-theme">
+    <footer class="py-5 mt-auto bg-dark">
       <div class="container">
         <div class="row gy-4 justify-content-between">
           <div class="col-md-5">
-            <h4 class="serif-font fw-bold mb-3">ATELIER.<span class="text-gold">AW</span></h4>
+            <img
+              src="./assets/brand_logo.png"
+              alt="ATELIER.AW"
+              class="nav-logo mb-3"
+            />
             <div class="d-flex gap-3">
-              <a href="#" class="text-white-50 text-decoration-none"><i class="bi bi-facebook fs-5"></i></a>
-              <a href="#" class="text-white-50 text-decoration-none"><i class="bi bi-instagram fs-5"></i></a>
-              <a href="#" class="text-white-50 text-decoration-none"><i class="bi bi-linkedin fs-5"></i></a>
-              <a href="#" class="text-white-50 text-decoration-none"><i class="bi bi-whatsapp fs-5"></i></a>
+              <a href="#" class="text-white-50 text-decoration-none footer-link"
+                ><i class="bi bi-facebook fs-5"></i
+              ></a>
+              <a href="#" class="text-white-50 text-decoration-none footer-link"
+                ><i class="bi bi-instagram fs-5"></i
+              ></a>
+              <a href="#" class="text-white-50 text-decoration-none footer-link"
+                ><i class="bi bi-linkedin fs-5"></i
+              ></a>
+              <a
+                href="https://wa.me/919037649964"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-white-50 text-decoration-none footer-link"
+              >
+                <i class="bi bi-whatsapp fs-5"></i>
+              </a>
             </div>
           </div>
           <div class="col-md-4 text-md-end">
-            <h5 class="text-gold text-uppercase small ls-1 fw-bold mb-3">Contact</h5>
+            <h5 class="text-gold text-uppercase small ls-1 fw-bold mb-3">
+              Contact
+            </h5>
             <ul class="list-unstyled small text-white-50">
-              <li class="mb-2"><a href="mailto:hello@atelieraw.com" class="text-decoration-none text-white-50">hello@atelieraw.com</a></li>
-              <li class="mb-2"><a href="tel:+918041235678" class="text-decoration-none text-white-50">+91 80 4123 5678</a></li>
+              <li class="mb-2">
+                <a
+                  href="mailto:ar.atelieraw@gmail.com"
+                  class="text-decoration-none text-white-50 footer-link"
+                  >ar.atelieraw@gmail.com</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="mailto:Info@atelieraw.in"
+                  class="text-decoration-none text-white-50 footer-link"
+                  >Info@atelieraw.in</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="tel:+919037649964"
+                  class="text-decoration-none text-white-50 footer-link"
+                  >+91 9037 64 99 64</a
+                >
+              </li>
             </ul>
           </div>
         </div>
-        <div class="border-top border-secondary mt-4 pt-4 text-center small text-white-50">
-          <p class="mb-0">© 2026 Atelier.AW | All Rights Reserved</p>
+        <div
+          class="border-top border-secondary mt-4 pt-4 text-center small text-white-50"
+        >
+          <p class="mb-0">
+            © <span id="year"></span>
+            <span class="text-gold copywrite-brand">Atelier.AW</span> | All Rights Reserved
+          </p>
         </div>
       </div>
     </footer>
@@ -416,6 +546,22 @@
           loader.classList.add("hide");
         }, 1000); // Start hiding after 1 second of initial display
       });
+    </script>
+    <script>
+      // Prevent body scroll when offcanvas is open
+      const offcanvasElement = document.getElementById('offcanvasNavbar');
+      offcanvasElement.addEventListener('show.bs.offcanvas', function () {
+        document.body.classList.add('offcanvas-open');
+        document.documentElement.classList.add('offcanvas-open');
+      });
+      offcanvasElement.addEventListener('hide.bs.offcanvas', function () {
+        document.body.classList.remove('offcanvas-open');
+        document.documentElement.classList.remove('offcanvas-open');
+      });
+    </script>
+
+     <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
