@@ -833,4 +833,11 @@ body.offcanvas-open {
 .footer-link:hover {
   color: var(--gold) !important;
 }
+
+/* --- Project Details --- */
+.btn-back-projects:hover {
+  background-color: var(--gold) !important;
+  border-color: var(--gold) !important;
+  color: var(--dark) !important;
+}
 }
