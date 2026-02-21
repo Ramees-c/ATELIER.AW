@@ -37,25 +37,6 @@
         height: 40%;
         background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
       }
-      .project-meta-label {
-        font-size: 0.75rem;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: var(--gold);
-        font-weight: 600;
-        margin-bottom: 0.25rem;
-      }
-      .project-meta-value {
-        font-size: 0.95rem;
-        color: var(--dark);
-        margin-bottom: 1.5rem;
-        font-family: "Playfair Display", serif;
-      }
-      .content-text {
-        line-height: 1.8;
-        font-weight: 300;
-        color: #555;
-      }
       .detail-image {
         margin-bottom: 0;
         transition: transform 0.3s ease;
@@ -99,10 +80,10 @@
     </div>
 
     <nav class="navbar sticky-top bg-white border-bottom py-3" id="mainNav">
-      <div class="container">
+      <div class="d-flex align-items-center justify-content-between w-100 px-3">
         <a class="navbar-brand" href="index.html">
           <img
-            src="./assets/brand_logo.png"
+            src="./assets/brand_logo2.png"
             alt="ATELIER.AW"
             class="nav-logo"
           />
@@ -128,7 +109,7 @@
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
               <img
-                src="./assets/brand_logo.png"
+                src="./assets/brand_logo2.png"
                 alt="ATELIER.AW"
                 class="nav-logo"
               />
@@ -151,16 +132,13 @@
                 <a class="nav-link active" href="projects.html">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
+                <a class="nav-link" href="about.html">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="news.html">News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
             <div class="text-center pb-4">
@@ -198,10 +176,12 @@
       <div class="container position-relative z-1 pb-5">
         <div class="row">
           <div class="col-lg-8">
-            <h1 class="text-white serif-font display-3 fw-bold mb-2">
+            <h1 class="text-white serif-font detail-hero-title fw-bold mb-2">
               House of Courts
             </h1>
-            <p class="text-gold lead fw-medium ls-1">Residential / Bangalore</p>
+            <p class="text-gold detail-hero-subtitle fw-medium ls-1">
+              Residential / Bangalore
+            </p>
           </div>
         </div>
       </div>
@@ -287,7 +267,9 @@
 
           <!-- Video Section -->
           <div class="mt-5 pt-4 border-top">
-            <h4 class="serif-font mb-4">Project Walkthrough</h4>
+            <h4 class="serif-font detail-section-title mb-4">
+              Project Walkthrough
+            </h4>
             <div class="ratio ratio-16x9 rounded-1 overflow-hidden shadow-sm">
               <iframe
                 src="https://www.youtube.com/embed/LXb3EKWsInQ?rel=0"
@@ -299,7 +281,9 @@
 
           <!-- PDF Section -->
           <div class="mt-5">
-            <h4 class="serif-font mb-4">Plans & Documentation</h4>
+            <h4 class="serif-font detail-section-title mb-4">
+              Plans & Documentation
+            </h4>
             <div class="border rounded-1 bg-light" style="height: 600px">
               <!-- Using a dummy PDF for demonstration. Replace src with your actual PDF file path -->
               <iframe
@@ -334,7 +318,7 @@
         <div class="row gy-4 justify-content-between">
           <div class="col-md-5">
             <img
-              src="./assets/brand_logo.png"
+              src="./assets/footer_logo.png"
               alt="ATELIER.AW"
               class="nav-logo mb-3"
             />
@@ -384,6 +368,13 @@
                   >+91 9037 64 99 64</a
                 >
               </li>
+              <li>
+                <a
+                  href="tel:+919037437967"
+                  class="text-decoration-none text-white-50 footer-link"
+                  >+91 9037 43 79 67</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -392,7 +383,7 @@
         >
           <p class="mb-0">
             © <span id="year"></span>
-            <span class="text-gold copywrite-brand">Atelier.AW</span> | All
+            <span class="text-gold copywrite-brand">ATELIER.AW</span> | All
             Rights Reserved
           </p>
         </div>

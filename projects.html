@@ -27,7 +27,7 @@
         font-weight: 600;
         letter-spacing: 1px;
         text-transform: uppercase;
-        font-size: 0.8rem;
+        font-size: clamp(0.7rem, 2vw, 0.85rem);
         margin: 0 5px;
         transition: all 0.3s ease;
       }
@@ -104,10 +104,10 @@
     </div>
 
     <nav class="navbar sticky-top bg-white border-bottom py-3" id="mainNav">
-      <div class="container">
+      <div class="d-flex align-items-center justify-content-between w-100 px-3">
         <a class="navbar-brand" href="index.html">
           <img
-            src="./assets/brand_logo.png"
+            src="./assets/brand_logo2.png"
             alt="ATELIER.AW"
             class="nav-logo"
           />
@@ -133,7 +133,7 @@
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
               <img
-                src="./assets/brand_logo.png"
+                src="./assets/brand_logo2.png"
                 alt="ATELIER.AW"
                 class="nav-logo"
               />
@@ -156,16 +156,13 @@
                 <a class="nav-link active" href="projects.html">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
+                <a class="nav-link" href="about.html">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="news.html">News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
             <div class="text-center pb-4">
@@ -203,8 +200,8 @@
             class="lead text-secondary mx-auto fw-light"
             style="max-width: 700px; font-size: clamp(1rem, 2vw, 1.125rem)"
           >
-            A portfolio of residential, commercial, and hospitality spaces
-            defined by context and detail.
+            A portfolio of thoughtfully designed spaces defined by context and
+            detail.
           </p>
         </div>
       </div>
@@ -245,8 +242,12 @@
                 />
               </div>
               <div class="news-body">
-                <h3 class="news-title serif-font mb-1 fs-4">House of Courts</h3>
-                <p class="text-gold text-uppercase small ls-2 fw-bold">
+                <h3 class="news-title serif-font mb-1 project-card-title">
+                  House of Courts
+                </h3>
+                <p
+                  class="text-gold text-uppercase project-card-category ls-2 fw-bold"
+                >
                   Residential / Bangalore
                 </p>
               </div>
@@ -266,8 +267,12 @@
                 />
               </div>
               <div class="news-body">
-                <h3 class="news-title serif-font mb-1 fs-4">Helix Workspace</h3>
-                <p class="text-gold text-uppercase small ls-2 fw-bold">
+                <h3 class="news-title serif-font mb-1 project-card-title">
+                  Helix Workspace
+                </h3>
+                <p
+                  class="text-gold text-uppercase project-card-category ls-2 fw-bold"
+                >
                   Commercial / Hyderabad
                 </p>
               </div>
@@ -287,10 +292,12 @@
                 />
               </div>
               <div class="news-body">
-                <h3 class="news-title serif-font mb-1 fs-4">
+                <h3 class="news-title serif-font mb-1 project-card-title">
                   The White Pavilion
                 </h3>
-                <p class="text-gold text-uppercase small ls-2 fw-bold">
+                <p
+                  class="text-gold text-uppercase project-card-category ls-2 fw-bold"
+                >
                   Residential / Goa
                 </p>
               </div>
@@ -310,8 +317,12 @@
                 />
               </div>
               <div class="news-body">
-                <h3 class="news-title serif-font mb-1 fs-4">Azure Resort</h3>
-                <p class="text-gold text-uppercase small ls-2 fw-bold">
+                <h3 class="news-title serif-font mb-1 project-card-title">
+                  Azure Resort
+                </h3>
+                <p
+                  class="text-gold text-uppercase project-card-category ls-2 fw-bold"
+                >
                   Hospitality / Kerala
                 </p>
               </div>
@@ -331,10 +342,12 @@
                 />
               </div>
               <div class="news-body">
-                <h3 class="news-title serif-font mb-1 fs-4">
+                <h3 class="news-title serif-font mb-1 project-card-title">
                   Urban Loft Office
                 </h3>
-                <p class="text-gold text-uppercase small ls-2 fw-bold">
+                <p
+                  class="text-gold text-uppercase project-card-category ls-2 fw-bold"
+                >
                   Commercial / Mumbai
                 </p>
               </div>
@@ -354,8 +367,12 @@
                 />
               </div>
               <div class="news-body">
-                <h3 class="news-title serif-font mb-1 fs-4">Stone House</h3>
-                <p class="text-gold text-uppercase small ls-2 fw-bold">
+                <h3 class="news-title serif-font mb-1 project-card-title">
+                  Stone House
+                </h3>
+                <p
+                  class="text-gold text-uppercase project-card-category ls-2 fw-bold"
+                >
                   Residential / Coorg
                 </p>
               </div>
@@ -391,7 +408,7 @@
         <div class="row gy-4 justify-content-between">
           <div class="col-md-5">
             <img
-              src="./assets/brand_logo.png"
+              src="./assets/footer_logo.png"
               alt="ATELIER.AW"
               class="nav-logo mb-3"
             />
@@ -441,6 +458,13 @@
                   >+91 9037 64 99 64</a
                 >
               </li>
+              <li>
+                <a
+                  href="tel:+919037437967"
+                  class="text-decoration-none text-white-50 footer-link"
+                  >+91 9037 43 79 67</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -449,7 +473,7 @@
         >
           <p class="mb-0">
             © <span id="year"></span>
-            <span class="text-gold copywrite-brand">Atelier.AW</span> | All
+            <span class="text-gold copywrite-brand">ATELIER.AW</span> | All
             Rights Reserved
           </p>
         </div>
