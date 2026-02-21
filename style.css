@@ -484,8 +484,7 @@ body {
   line-height: 1.8;
 }
 .engagement-title {
-  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-  font-weight: bold;
+  font-size: clamp(1rem, 2vw, 1rem);
 }
 .principal-name {
   font-size: clamp(1.25rem, 3vw, 1.5rem);
